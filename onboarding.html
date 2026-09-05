@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="app.css">
+    <title>Criar negócio</title>
+</head>
+
+<body class="app-body">
+
+    <div class="app-card">
+        <h1>Vamos configurar o teu negócio</h1>
+        <p class="app-subtitle">Isto leva menos de um minuto.</p>
+
+        <p class="form-message" id="onboarding-message"></p>
+
+        <form id="onboarding-form">
+            <label for="business-name">Nome do negócio</label>
+            <input type="text" id="business-name" placeholder="Ex: Oficina do Shelton" required>
+
+            <label for="business-type">Tipo de serviço</label>
+            <select id="business-type" required>
+                <option value="mechanic">Mecânica</option>
+                <option value="electrician">Eletricidade</option>
+                <option value="plumber">Canalização</option>
+                <option value="appliance_repair">Reparação de eletrodomésticos</option>
+                <option value="it_technician">Técnico de informática</option>
+                <option value="maintenance">Manutenção geral</option>
+                <option value="other">Outro</option>
+            </select>
+
+            <button type="submit" id="onboarding-button">Continuar</button>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+    <script src="supabaseClient.js"></script>
+    <script src="onboarding.js"></script>
+</body>
+
+</html>

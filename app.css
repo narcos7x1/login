@@ -1,0 +1,119 @@
+.app-body{
+    background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.app-card{
+    background: #fff;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    padding: 45px 40px;
+    width: 420px;
+    max-width: 100%;
+}
+
+.app-card h1{
+    font-size: 22px;
+    margin-bottom: 6px;
+}
+
+.app-subtitle{
+    font-size: 13px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.app-card label{
+    display: block;
+    font-size: 12px;
+    color: #555;
+    margin: 14px 0 6px;
+    font-weight: 600;
+}
+
+.app-card input,
+.app-card select{
+    background-color: #eee;
+    border: none;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 8px;
+    width: 100%;
+    outline: none;
+}
+
+.app-card button{
+    background-color: #512da8;
+    color: #fff;
+    font-size: 12px;
+    padding: 12px 45px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.app-card button:disabled{
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* ===== Dashboard ===== */
+.dashboard-topbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.dashboard-topbar h1{
+    font-size: 20px;
+}
+
+.dashboard-topbar button{
+    background: transparent;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-size: 12px;
+    cursor: pointer;
+    color: #555;
+}
+
+.dashboard-card{
+    width: 100%;
+    max-width: 720px;
+}
+
+.metric-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.metric{
+    background: #f6f5fb;
+    border-radius: 12px;
+    padding: 16px;
+}
+
+.metric .value{
+    font-size: 22px;
+    font-weight: 700;
+    color: #512da8;
+}
+
+.metric .label{
+    font-size: 12px;
+    color: #777;
+    margin-top: 4px;
+}
